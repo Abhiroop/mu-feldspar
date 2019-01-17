@@ -1,6 +1,9 @@
 [![Build Status](https://travis-ci.org/Feldspar/raw-feldspar.png?branch=master)](https://travis-ci.org/Feldspar/raw-feldspar)
+# mu-feldspar
 
-# Resource-AWare Feldspar
+Experiments with raw-feldspar.
+
+## Resource-AWare Feldspar
 
 This package is a complete reimplementation and partly a redesign of the Feldspar EDSL (formerly implemented in [feldspar-language](http://hackage.haskell.org/package/feldspar-language)). Feldspar aims to raise the abstraction level of numeric processing and DSP. Its compiler generates efficient C code suitable for running on embedded targets.
 
