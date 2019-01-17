@@ -1,5 +1,6 @@
 {-# LANGUAGE PolyKinds #-}
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TypeInType #-}
 {-# LANGUAGE UndecidableInstances #-}
 
 -- | Internal representation of Feldspar programs
@@ -415,8 +416,6 @@ newtype Comp a = Comp
         Operational.Program CompCMD (Operational.Param2 Data PrimType') a
     }
   deriving (Functor, Applicative, Monad)
-
-
 
 --------------------------------------------------------------------------------
 -- Template Haskell instances

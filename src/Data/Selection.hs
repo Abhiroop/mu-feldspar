@@ -18,6 +18,9 @@ module Data.Selection
 -- | Selection: description of a set of values
 data Selection a = Selection (a -> Bool)
 
+instance Semigroup (Selection a) where
+  (<>) = union
+
 -- |
 -- @
 -- `mempty`  = `empty`

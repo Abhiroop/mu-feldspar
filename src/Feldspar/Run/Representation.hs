@@ -1,3 +1,5 @@
+{-# LANGUAGE TypeInType #-}
+
 -- | Monad for running Feldspar programs
 
 module Feldspar.Run.Representation where
