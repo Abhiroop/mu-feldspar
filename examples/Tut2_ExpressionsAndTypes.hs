@@ -1,3 +1,4 @@
+{-# LANGUAGE MonoLocalBinds #-}
 {-# LANGUAGE PartialTypeSignatures #-}
 
 {-# OPTIONS_GHC -fno-warn-partial-type-signatures #-}
