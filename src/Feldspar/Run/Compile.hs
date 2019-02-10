@@ -3,7 +3,6 @@
 module Feldspar.Run.Compile where
 
 
-
 import Control.Monad.Identity
 import Control.Monad.Reader
 import Data.Map (Map)
@@ -147,7 +146,7 @@ type ProgC = Program TargetCMD (Param2 Prim PrimType')
 translateExp :: forall m a . Monad m => Data a -> TargetT m (VExp a)
 translateExp a = do
     cs <- asks (compilerAssertions . envOptions)
-    goAST $ optimize cs $ unData a
+    goAST $ unData a
   where
     -- Assumes that `b` is not a function type
     goAST :: ASTF FeldDomain b -> TargetT m (VExp b)
